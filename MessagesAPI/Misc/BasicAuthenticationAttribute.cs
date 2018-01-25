@@ -8,7 +8,7 @@ using System.Threading;
 using System.Web.Http.Controllers;
 using System.Web.Http.Filters;
 
-namespace MessagesAPI.Controllers
+namespace MessagesAPI.Misc
 {
     public class BasicAuthenticationAttribute : AuthorizationFilterAttribute
     {

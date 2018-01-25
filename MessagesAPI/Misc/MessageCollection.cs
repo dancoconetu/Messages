@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using MessagesAPI.Models;
 
-namespace MessagesAPI.Controllers
+namespace MessagesAPI.Misc
 {   
     public class MessageCollection
     {
@@ -11,7 +11,8 @@ namespace MessagesAPI.Controllers
         public static MessageCollection instance = null;
         
         private MessageCollection()
-        {
+        {   
+            // providing the list with some messages
             messages = new List<Message>();
             Message m1 = new Message();
             m1.Text = "Hello";
@@ -48,6 +49,7 @@ namespace MessagesAPI.Controllers
         }
 
         public List<Message> Messages { get => messages; set => messages = value; }
+
 
         public Message AddMessage(Message message)
         {

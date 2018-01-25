@@ -98,14 +98,14 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\BasicAuthenticationAttribute.cs" />
+    <Compile Include="Misc\BasicAuthenticationAttribute.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
-    <Compile Include="Controllers\UserNameCollection.cs" />
+    <Compile Include="Misc\UserNameCollection.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Message.cs" />
-    <Compile Include="Controllers\MessageCollection.cs" />
+    <Compile Include="Misc\MessageCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
