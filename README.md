@@ -19,12 +19,17 @@ The available Rest Verbs are Get, Post, Put and Delete, found at http://localhos
 ## Headers and body examples for each webservice that I used in Postman
 #### Get with or without parameter
 Header: 
+
 content-type: application/json
+
 accept-language: en-US,en;q=0.8,en-US,en;q=0.8
-user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 
+Safari/537.36,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+
 accept: application/json
 
-##  POST, PUT, DELETE
+###  POST, PUT, DELETE
 Header
 content-type: application/json
 
@@ -63,7 +68,7 @@ Only "Text" is used inside the webservice. I used the Message as a parameter suc
 
 Put : Same Body as the Post and with an id as a parameter.
 
-
+I used postman and examples like this to test the application. I also created some unit tests which can be found in the Test project.
 
 ## More explanations
 I have used authentication to make sure that only the same client can modify or delete their own message. I save the authenticated users inside a Dictionary inside a class based on singleton pattern. The same way I save the messages, inside a list inside a class based on singleton pattern. 
