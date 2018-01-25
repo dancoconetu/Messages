@@ -12,7 +12,7 @@ namespace MessagesAPI.Misc
         
         private MessageCollection()
         {   
-            // providing the list with some messages
+            // providing the list with dummy messages
             messages = new List<Message>();
             Message m1 = new Message();
             m1.Text = "Hello";
