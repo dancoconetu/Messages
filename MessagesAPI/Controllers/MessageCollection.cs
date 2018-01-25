@@ -13,6 +13,31 @@ namespace MessagesAPI.Controllers
         private MessageCollection()
         {
             messages = new List<Message>();
+            Message m1 = new Message();
+            m1.Text = "Hello";
+            m1.Username = "Dan";
+            Message m2 = new Message();
+            m2.Text = "How are you?";
+            m2.Username = "Roland";
+            Message m3 = new Message();
+            m3.Text = "How is the weather?";
+            m3.Username = "Georgi";
+            Message m4 = new Message();
+            m4.Text = "Where are you from?";
+            m4.Username = "Zsofia";
+            Message m5 = new Message();
+            m5.Text = "The weather is fine";
+            m5.Username = "Stefan";
+            Message m6 = new Message();
+            m6.Text = "It's raining";
+            m6.Username = "Andrew";
+            AddMessage(m1);
+            AddMessage(m2);
+            AddMessage(m3);
+            AddMessage(m4);
+            AddMessage(m5);
+            AddMessage(m6);
+
         }
         //singleton pattern used for this class
         public static MessageCollection GetInstace()

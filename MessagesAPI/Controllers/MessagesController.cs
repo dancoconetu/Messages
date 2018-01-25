@@ -61,6 +61,7 @@ namespace MessagesAPI.Controllers
         // POST: api/Message
         [SwaggerResponse(HttpStatusCode.Created, Description = "The message was added to the collection")]
         [SwaggerResponse(HttpStatusCode.InternalServerError, Description = "The message could not be added to the collection")]
+        [SwaggerResponse(HttpStatusCode.Unauthorized, Description = "The user is not authorized")]
         [BasicAuthentication]
         public IHttpActionResult Post([FromBody]Message receivedMessage)
         {
@@ -91,6 +92,7 @@ namespace MessagesAPI.Controllers
         [SwaggerResponse(HttpStatusCode.OK, Description = "The update was succesfull")]
         [SwaggerResponse(HttpStatusCode.NotFound, Description = "The message was not found")]
         [SwaggerResponse(HttpStatusCode.Forbidden, Description = "The user has no rights to update the message")]
+        [SwaggerResponse(HttpStatusCode.Unauthorized, Description = "The user is not authorized")]
         [BasicAuthentication]
         public IHttpActionResult Put(int id, [FromBody]Message message)
         {
@@ -119,6 +121,7 @@ namespace MessagesAPI.Controllers
         [SwaggerResponse(HttpStatusCode.OK, Description = "Delete was succesfull")]
         [SwaggerResponse(HttpStatusCode.NotFound, Description = "The message was not found")]
         [SwaggerResponse(HttpStatusCode.Forbidden, Description = "The user has no rights to delete the message")]
+        [SwaggerResponse(HttpStatusCode.Unauthorized, Description = "The user is not authorized")]
         [BasicAuthentication]
         public IHttpActionResult Delete(int id)
         {
